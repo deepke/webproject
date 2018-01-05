@@ -7,19 +7,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
-<![endif]-->
-		<link rel="stylesheet" type="text/css" href="src/static/h-ui/css/H-ui.css" />
-		<link rel="stylesheet" type="text/css" href="src/lib/Hui-iconfont/1.0.8/iconfont.min.css" />
-		<!--[if lt IE 9]>
-<link href="static/h-ui/css/H-ui.ie.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-		<!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="ui-frame/static/h-ui/css/H-ui.css" />
+		<link rel="stylesheet" type="text/css" href="ui-frame/lib/Hui-iconfont/1.0.8/iconfont.min.css" />
+
 		<style type="text/css">
 			.ui-sortable .panel-header {
 				cursor: move
@@ -32,7 +23,7 @@
 		<div class="sideBox">
 			<ul class="nav navbar-nav pt-20">
 				<li>
-					<a href="src/login.html">登录/注册</a>
+					<a href="main/user/login.html">登录/注册</a>
 				</li>
 				<li>
 					<a href="#src/about/">关于我们</a>
@@ -46,7 +37,7 @@
 			<header class="navbar-wrapper">
 				<div class="navbar navbar-black navbar-fixed-top">
 					<div class="container cl">
-						<a class="logo navbar-logo hidden-xs" href="src/login.html">Deepke</a>
+						<a class="logo navbar-logo hidden-xs" href="main/user/login.html">Deepke</a>
 						<a class="logo navbar-logo-m visible-xs" href="#">Deepke</a>
 						<span class="logo navbar-slogan hidden-xs"> &middot;  &middot; </span>
 						<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs JS-nav-toggle" href="javascript:;">&#xe667;</a>
@@ -56,7 +47,7 @@
 									<a href="index.html" target="_blank">首页</a>
 								</li>
 								<li>
-									<a href="src/blog.html" target="_blank">博客</a>
+									<a href="main/blog/blog.html" target="_blank">博客</a>
 								</li>
 								<li>
 									<a href="#src/about/" target="_blank">关于我们</a>
@@ -68,33 +59,6 @@
 				</div>
 			</header>
 
-			<!-- 幻灯片 -->
-			<!--
-			<div class="wap-container">
-				<div id="slider-3">
-					<div class="slider">
-						<div class="bd">
-							<ul>
-								<li>
-									<a href="#" target="_blank"><img src="temp/banner1.jpg"></a>
-								</li>
-								<li>
-									<a href="#" target="_blank"><img src="temp/banner2.jpg"></a>
-								</li>
-								<li>
-									<a href="#" target="_blank"><img src="temp/banner3.jpg"></a>
-								</li>
-							</ul>
-						</div>
-						<ol class="hd cl dots">
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-		-->
 			<div class="container ui-sortable">
 				<h1>Hi,deepke!</h1>
 				<p>开启我们不一样的旅行！</p>
@@ -117,7 +81,7 @@
 						<div class="box">
 							<p>评论</p>
 
-							<a href="src/login.html">登录评论</a>
+							<a href="main/user/login.html">登录评论</a>
 						</div>
 						</ddiv>
 					</div>
@@ -166,34 +130,13 @@
 			</div>
 		</div>
 
-		<!--普通弹出层-->
-		<!-- 
-		<div id="modal-demo" class="modal fade middle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content radius">
-					<div class="modal-header">
-						<h3 class="modal-title">对话框标题</h3>
-						<a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
-					</div>
-					<div class="modal-body">
-						<p>对话框内容…</p>
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-primary">确定</button>
-						<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		-->
-
-		<script type="text/javascript" src="src/lib/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="src/lib/jquery-ui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="src/static/h-ui/js/H-ui.js"></script>
-		<script type="text/javascript" src="src/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js"></script>
-		<script type="text/javascript" src="src/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="src/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-		<script type="text/javascript" src="src/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery-ui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="ui-frame/static/h-ui/js/H-ui.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+		<script type="text/javascript" src="ui-frame/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 		<script>
 			//弹窗
 			function modaldemo() {
