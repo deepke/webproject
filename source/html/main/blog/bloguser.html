@@ -23,24 +23,29 @@
 
 	<body ontouchstart>
 		<div class="containBox">
-			<div class="containBox-bg"></div>
-
-			<nav class="breadcrumb">
-				<div class="container">
-					<i class="Hui-iconfont">&#xe67f;</i>
-					<a href="/" class="c-primary">首页</a>
-					<span class="c-gray en">&gt;</span>
-					<a href="#">组件</a>
-					<span class="c-gray en">&gt;</span>
-					<span class="c-gray">当前页面</span>
-				</div>
-			</nav>
-
 			<div class="container ui-sortable">
-				<h1>Hi,H-ui!</h1>
-				<p></p>
+				<div class="panel panel-default mt-20">
+
+					<div class="tabBar cl">
+						<div class="album-item" style="width:140px">
+							<div class="album-img">
+								<img src="图片路径">
+							</div>
+						</div>
+					</div>
+					<div class="row cl">
+						<div class="formControls col-xs-8">
+							<span class="btn-upload form-group">
+								<input class="input-text upload-url" type="text" name="uploadfile-2" id="uploadfile-2" readonly style="width:200px">
+								<a href="javascript:void();" class="btn btn-primary upload-btn"><i class="Hui-iconfont">&#xe642;</i> 浏览文件</a>
+								<input type="file" multiple name="file-2" class="input-file">
+								</span>
+						</div>
+					</div>
+				</div>
+
 				<div class="panel panel-default mt-26">
-					<div class="panel-header">个人信息</div>
+					<!--div class="panel-header">个人信息</div -->
 					<div id="HuiTab-demo1" class="HuiTab">
 						<div class="tabBar cl">
 							<span>我的博客</span>
