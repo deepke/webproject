@@ -11,10 +11,10 @@
 !function($) {
 	$.fn.Huitags = function(options) {
 		var defaults = {
-			value:'Hui前端框架,H-ui,辉哥',
+			value:'标签',
 			maxlength : 20,
 			number : 5,
-			tagsDefault : ["Html","CSS","JS"],
+			tagsDefault : ["Html","CSS","JS","C/C++"],
 		}
 		var options = $.extend(defaults, options);
 		var keyCodes = {
