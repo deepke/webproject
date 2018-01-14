@@ -9,9 +9,10 @@
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link rel="stylesheet" type="text/css" href="../../ui-frame/static/h-ui/css/H-ui.css" />
 		<link rel="stylesheet" type="text/css" href="../../ui-frame/lib/Hui-iconfont/1.0.8/iconfont.min.css" />
-		<script type="text/javascript" charset="utf-8" src="../../editor/ueditor.config.js"></script>
-    	<script type="text/javascript" charset="utf-8" src="../../editor/ueditor.all.min.js"> </script>
-    	<script type="text/javascript" charset="utf-8" src="../../editor/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../ui-frame/lib/editor/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../ui-frame/lib/editor/ueditor.all.min.js">
+		</script>
+		<script type="text/javascript" charset="utf-8" src="../../ui-frame/lib/editor/lang/zh-cn/zh-cn.js"></script>
 		<style type="text/css">
 			.ui-sortable .panel-header {
 				cursor: move
@@ -36,37 +37,6 @@
 										<input type="text" class="input-text" placeholder="输入文章标题" name="username" id="username">
 									</div>
 								</div>
-
-								<!-- <div class="cl mt-20">
-									<div class="btn-group l">
-										<span class="btn btn-primary" title="源代码"><i class="Hui-iconfont">&#xe6ee;</i></span>
-									</div>
-									<div class="btn-group l ml-5">
-										<span class="btn btn-primary" title="左对齐"><i class="Hui-iconfont">&#xe710;</i></span>
-										<span class="btn btn-primary" title="居中对齐"><i class="Hui-iconfont">&#xe70e;</i></span>
-										<span class="btn btn-primary" title="右对齐"><i class="Hui-iconfont">&#xe711;</i></span>
-										<span class="btn btn-primary" title="两头对齐"><i class="Hui-iconfont">&#xe70f;</i></span>
-									</div>
-									<div class="btn-group l ml-5">
-										<span class="btn btn-primary" title="字体"><i class="Hui-iconfont">&#xe6ec;</i></span>
-										<span class="btn btn-primary" title="加粗"><i class="Hui-iconfont">&#xe6e7;</i></span>
-										<span class="btn btn-primary" title="倾斜"><i class="Hui-iconfont">&#xe6e9;</i></span>
-										<span class="btn btn-primary" title="下划线"><i class="Hui-iconfont">&#xe6fe;</i></span>
-										<span class="btn btn-primary" title="行高"><i class="Hui-iconfont">&#xe6fc;</i></span>
-										<span class="btn btn-primary" title="行宽"><i class="Hui-iconfont">&#xe6fd;</i></span>
-									</div>
-									<div class="btn-group l ml-5">
-										<span class="btn btn-primary" title="链接"><i class="Hui-iconfont">&#xe6f1;</i></span>
-										<span class="btn btn-primary" title="有序列表"><i class="Hui-iconfont">&#xe6f3;</i></span>
-										<span class="btn btn-primary" title="无序列表"><i class="Hui-iconfont">&#xe6f5;</i></span>
-									</div>
-									<div class="btn-group l ml-5">
-										<span class="btn btn-primary" title="剪切"><i class="Hui-iconfont">&#xe6ef;</i></span>
-										<span class="btn btn-primary" title="复制"><i class="Hui-iconfont">&#xe6ea;</i></span>
-										<span class="btn btn-primary" title="粘贴"><i class="Hui-iconfont">&#xe6eb;</i></span>
-									</div>
-								</div> -->
-
 							</div>
 						</div>
 						<div class="panel-body">
@@ -75,23 +45,19 @@
 								<div class="row cl">
 
 									<div class="formControls col-xs-8">
-										<script id="editor" type="text/plain" style="width:824px;height:500px;"></script>
-										<textarea cols="" rows="" class="textarea" name="beizhu" id="beizhu" placeholder="说点什么...最少输入10个字符"></textarea>
+										<script id="editor" type="text/plain" style="width:100%;height:500px;"></script>
+										<!-- <textarea cols="" rows="" class="textarea" name="beizhu" id="beizhu" placeholder="说点什么...最少输入10个字符"></textarea> -->
 									</div>
 								</div>
 
 							</form>
 						</div>
-						<div class="panel-body">
-							<div >
+						<div class="panel-body ">
+							<div style="width:66.66666667%;">
 								<div class="Huitags-wraper">
-									<div class="Huitags-editor cl">
+									<div class="Huitags-editor cl" id="label1">
+										<input type="hidden" id="label" value="">
 										<i class="Huitags-icon Hui-iconfont"></i>
-										<span class="Huitags-token">H-ui</span>
-										<span class="Huitags-token">辉哥</span>
-										<span class="Huitags-token">JS</span>
-										<span class="Huitags-token">CSS</span>
-										<span class="Huitags-token">Html</span>
 									</div>
 									<div class="Huitags-input-wraper">
 										<input type="text" class="input-text Huitags-input" maxlength="20" value="">
@@ -100,22 +66,16 @@
 										<div class="Huitags-notag" style="display:none">暂无常用标签</div>
 										<div class="Huitags-has"></div>
 									</div>
-									<input type="hidden" class="Huitags-val" name="" value="H-ui,辉哥,JS,CSS,Html">
+									<div class="Huitags-editor cl" id="label2">
+										<span class="Huitags-token">H-ui</span>
+										<span class="Huitags-token">辉哥</span>
+										<span class="Huitags-token">JS</span>
+										<span class="Huitags-token">CSS</span>
+										<span class="Huitags-token">Html</span>
+									</div>
 								</div>
 							</div>
 						</div>
-
-						<div class="panel panel-default mt-20">
-							<!-- div class="panel-header">星星评价</div -->
-							<!-- div class="panel-body">
-								<div class="clearfix">
-									<span class="f-l f-15 va-m">描述相符：</span>
-									<div id="star-1" class="star-bar size-M f-l mr-10 va-m"></div>
-									<strong id="result-1" class="f-l va-m"></strong>
-								</div>
-							</div -->
-						</div>
-
 					</div>
 					<div class="row cl">
 						<div class="col-xs-8 col-xs-offset-3">
@@ -125,7 +85,7 @@
 				</div>
 				<footer class="footer mt-20">
 					<div class="container">
-						
+
 					</div>
 				</footer>
 
@@ -139,12 +99,48 @@
 			<script type="text/javascript" src="../../ui-frame/lib/jquery.validation/1.14.0/validate-methods.js"></script>
 			<script type="text/javascript" src="../../ui-frame/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 			<script type="text/javascript">
-			$('.Huitags-token').click(function () {
-        		 $(this).addClass('hidden');
-   			 });
+				$('#label2 .Huitags-token').click(function() {
+					var a = document.getElementById("label").value;
+					a = a.replace(/\s+/g, "");
+					if(a.length == 0) {
+						a = $(this).html();
+					} else {
+						a = a + ',' + $(this).html();
+					}
+					document.getElementById("label").value = a;
+					$('#label1').append("<span class='Huitags-token' onclick='label(this)'>" + $(this).html() + "</span>");
+					$(this).addClass('hidden');
+					alert(a)
+				});
+				/*$('span.label').click(function () {
+				alert(0)
+				var a=document.getElementById("label").value;
+				
+				if(a.indexOf(",")){
+					a=a.replace(","+$(this).html(),""); 
+				}else{
+					a=a.replace($(this).html(),"");
+				}
+				document.getElementById("label").value=a;
+        		$(this).addClass('hidden');
+        		alert(a)
+   			 });*/
+				function label(b) {
+					$(b).remove();
+					var a = document.getElementById("label").value;
+
+					if(a.indexOf(",") == -1) {
+						a = a.replace($(b).html(), "");
+
+					} else {
+						a = a.replace(',' + $(b).html(), "");
+					}
+					alert(a)
+					document.getElementById("label").value = a;
+
+				}
 			</script>
 			<script>
-
 				//弹窗
 				function modaldemo() {
 					$("#modal-demo").modal("show");
@@ -320,118 +316,129 @@
 				});
 			</script>
 			<script type="text/javascript">
+				//实例化编辑器
+				//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+				var ue = UE.getEditor('editor');
 
-    //实例化编辑器
-    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor');
+				function isFocus(e) {
+					alert(UE.getEditor('editor').isFocus());
+					UE.dom.domUtils.preventDefault(e)
+				}
 
+				function setblur(e) {
+					UE.getEditor('editor').blur();
+					UE.dom.domUtils.preventDefault(e)
+				}
 
-    function isFocus(e){
-        alert(UE.getEditor('editor').isFocus());
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function setblur(e){
-        UE.getEditor('editor').blur();
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function insertHtml() {
-        var value = prompt('插入html代码', '');
-        UE.getEditor('editor').execCommand('insertHtml', value)
-    }
-    function createEditor() {
-        enableBtn();
-        UE.getEditor('editor');
-    }
-    function getAllHtml() {
-        alert(UE.getEditor('editor').getAllHtml())
-    }
-    function getContent() {
-        var arr = [];
-        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getContent());
-        alert(arr.join("\n"));
-    }
-    function getPlainTxt() {
-        var arr = [];
-        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getPlainTxt());
-        alert(arr.join('\n'))
-    }
-    function setContent(isAppendTo) {
-        var arr = [];
-        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
-        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
-        alert(arr.join("\n"));
-    }
-    function setDisabled() {
-        UE.getEditor('editor').setDisabled('fullscreen');
-        disableBtn("enable");
-    }
+				function insertHtml() {
+					var value = prompt('插入html代码', '');
+					UE.getEditor('editor').execCommand('insertHtml', value)
+				}
 
-    function setEnabled() {
-        UE.getEditor('editor').setEnabled();
-        enableBtn();
-    }
+				function createEditor() {
+					enableBtn();
+					UE.getEditor('editor');
+				}
 
-    function getText() {
-        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
-        var range = UE.getEditor('editor').selection.getRange();
-        range.select();
-        var txt = UE.getEditor('editor').selection.getText();
-        alert(txt)
-    }
+				function getAllHtml() {
+					alert(UE.getEditor('editor').getAllHtml())
+				}
 
-    function getContentTxt() {
-        var arr = [];
-        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
-        arr.push("编辑器的纯文本内容为：");
-        arr.push(UE.getEditor('editor').getContentTxt());
-        alert(arr.join("\n"));
-    }
-    function hasContent() {
-        var arr = [];
-        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
-        arr.push("判断结果为：");
-        arr.push(UE.getEditor('editor').hasContents());
-        alert(arr.join("\n"));
-    }
-    function setFocus() {
-        UE.getEditor('editor').focus();
-    }
-    function deleteEditor() {
-        disableBtn();
-        UE.getEditor('editor').destroy();
-    }
-    function disableBtn(str) {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            if (btn.id == str) {
-                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-            } else {
-                btn.setAttribute("disabled", "true");
-            }
-        }
-    }
-    function enableBtn() {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-        }
-    }
+				function getContent() {
+					var arr = [];
+					arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+					arr.push("内容为：");
+					arr.push(UE.getEditor('editor').getContent());
+					alert(arr.join("\n"));
+				}
 
-    function getLocalData () {
-        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
-    }
+				function getPlainTxt() {
+					var arr = [];
+					arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+					arr.push("内容为：");
+					arr.push(UE.getEditor('editor').getPlainTxt());
+					alert(arr.join('\n'))
+				}
 
-    function clearLocalData () {
-        UE.getEditor('editor').execCommand( "clearlocaldata" );
-        alert("已清空草稿箱")
-    }
-</script>
+				function setContent(isAppendTo) {
+					var arr = [];
+					arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+					UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+					alert(arr.join("\n"));
+				}
+
+				function setDisabled() {
+					UE.getEditor('editor').setDisabled('fullscreen');
+					disableBtn("enable");
+				}
+
+				function setEnabled() {
+					UE.getEditor('editor').setEnabled();
+					enableBtn();
+				}
+
+				function getText() {
+					//当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+					var range = UE.getEditor('editor').selection.getRange();
+					range.select();
+					var txt = UE.getEditor('editor').selection.getText();
+					alert(txt)
+				}
+
+				function getContentTxt() {
+					var arr = [];
+					arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+					arr.push("编辑器的纯文本内容为：");
+					arr.push(UE.getEditor('editor').getContentTxt());
+					alert(arr.join("\n"));
+				}
+
+				function hasContent() {
+					var arr = [];
+					arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+					arr.push("判断结果为：");
+					arr.push(UE.getEditor('editor').hasContents());
+					alert(arr.join("\n"));
+				}
+
+				function setFocus() {
+					UE.getEditor('editor').focus();
+				}
+
+				function deleteEditor() {
+					disableBtn();
+					UE.getEditor('editor').destroy();
+				}
+
+				function disableBtn(str) {
+					var div = document.getElementById('btns');
+					var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+					for(var i = 0, btn; btn = btns[i++];) {
+						if(btn.id == str) {
+							UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+						} else {
+							btn.setAttribute("disabled", "true");
+						}
+					}
+				}
+
+				function enableBtn() {
+					var div = document.getElementById('btns');
+					var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+					for(var i = 0, btn; btn = btns[i++];) {
+						UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+					}
+				}
+
+				function getLocalData() {
+					alert(UE.getEditor('editor').execCommand("getlocaldata"));
+				}
+
+				function clearLocalData() {
+					UE.getEditor('editor').execCommand("clearlocaldata");
+					alert("已清空草稿箱")
+				}
+			</script>
 	</body>
 
 </html>
