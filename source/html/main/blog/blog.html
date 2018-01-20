@@ -10,11 +10,6 @@
 
 		<link rel="stylesheet" type="text/css" href="../../ui-frame/static/h-ui/css/H-ui.css" />
 		<link rel="stylesheet" type="text/css" href="../../ui-frame/lib/Hui-iconfont/1.0.8/iconfont.min.css" />
-		<style type="text/css">
-			.ui-sortable .panel-header {
-				cursor: move
-			}
-		</style>
 		<title>博客</title>
 	</head>
 
@@ -22,7 +17,7 @@
 		<div class="sideBox">
 			<ul class="nav navbar-nav pt-20">
 				<li>
-					<a href="../user/login.html">登录/注册</a>
+					<a href="../user/login.html">登录  | 注册</a>
 				</li>
 				<li>
 					<a href="#src/about/">关于我们</a>
@@ -37,20 +32,23 @@
 			<header class="navbar-wrapper">
 				<div class="navbar navbar-black navbar-fixed-top">
 					<div class="container cl">
-						<a class="logo navbar-logo hidden-xs" href="../../index.html">Deepke</a>
-						<a class="logo navbar-logo-m visible-xs" href="../../index.html">Deepke</a>
+						<a class="logo navbar-logo hidden-xs" href="#">Deepke</a>
+						<a class="logo navbar-logo-m visible-xs" href="#">Deepke</a>
 						<!-- span class="logo navbar-slogan hidden-xs"> &middot;  &middot; </span -->
 						<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs JS-nav-toggle" href="javascript:;">&#xe667;</a>
 						<nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
 							<ul class="cl">
-								<li>
-									<a href="../../index.html" target="_blank">首页</a>
+								<li class="current">
+									<a href="index.html" target="_blank">首页</a>
 								</li>
-								<li  class="current">
-									<a href="../blog/blog.html" target="_blank">博客</a>
+								<li>
+									<a href="main/blog/blog.html" target="_blank">博客</a>
 								</li>
 								<li>
 									<a href="#src/about/" target="_blank">关于我们</a>
+								</li>
+								<li valign="left" style="float:right;">
+									<a href="main/user/login.html">登录  | 注册</a>
 								</li>
 							</ul>
 						</nav>
@@ -250,18 +248,6 @@
 						$("#result-1").html('你的评分是' + score + '分');
 					}
 				});
-
-				$(".ui-sortable").sortable({
-					//connectWith: ".panel",
-					items: ".panel",
-					handle: ".panel-header",
-					//delay: 300, //时间延迟
-					//distance: 15, //距离延迟
-					placeholder: "ui-state-highlight", //占位符样式
-					update: function(event, ui) {
-
-					}
-				}).disableSelection();
 
 				var _bodyHeight = $(window).height();
 				var _doch = $(document).height();
