@@ -10,12 +10,6 @@
 
 		<link rel="stylesheet" type="text/css" href="ui-frame/static/h-ui/css/H-ui.css" />
 		<link rel="stylesheet" type="text/css" href="ui-frame/lib/Hui-iconfont/1.0.8/iconfont.min.css" />
-
-		<style type="text/css">
-			.ui-sortable .panel-header {
-				cursor: move
-			}
-		</style>
 		<title>deepke</title>
 	</head>
 
@@ -74,7 +68,7 @@
 									<script type="text/javascript">
 										var path = '';
 									</script>
-									<script language="javascript" src="src/blog/js/top.js"></script>
+									
 									<div class="box">
 										<h2>这是一个神奇的故事！3</h2>
 										<hr />
@@ -93,7 +87,6 @@
 										var path = '';
 									</script>
 
-									<script language="javascript" src="/styles/js/top.js"></script>
 									<div class="box">
 										<h2>这是一个神奇的故事！3</h2>
 										<hr />
@@ -299,18 +292,6 @@
 						$("#result-1").html('你的评分是' + score + '分');
 					}
 				});
-
-				$(".ui-sortable").sortable({
-					//connectWith: ".panel",
-					items: ".panel",
-					handle: ".panel-header",
-					//delay: 300, //时间延迟
-					//distance: 15, //距离延迟
-					placeholder: "ui-state-highlight", //占位符样式
-					update: function(event, ui) {
-
-					}
-				}).disableSelection();
 
 				var _bodyHeight = $(window).height();
 				var _doch = $(document).height();

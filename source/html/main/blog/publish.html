@@ -18,14 +18,52 @@
 				cursor: move
 			}
 		</style>
-		<title>Hi，H-ui v3.1</title>
+		<title>发布</title>
 		<meta name="keywords" content="关键词,5个左右,单个8汉字以内">
 		<meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
 	</head>
+	<div class="sideBox">
+		<ul class="nav navbar-nav pt-20">
+			<li>
+				<a href="main/user/login.html">登录/注册</a>
+			</li>
+			<li>
+				<a href="#src/about/">关于我们</a>
+			</li>
+		</ul>
+	</div>
 
 	<body ontouchstart>
 		<div class="containBox">
 			<div class="containBox-bg"></div>
+			<!-- 导航栏的头部设计 -->
+			<header class="navbar-wrapper">
+				<div class="navbar navbar-black navbar-fixed-top">
+					<div class="container cl">
+						<a class="logo navbar-logo hidden-xs" href="#">Deepke</a>
+						<a class="logo navbar-logo-m visible-xs" href="#">Deepke</a>
+						<!-- span class="logo navbar-slogan hidden-xs"> &middot;  &middot; </span -->
+						<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs JS-nav-toggle" href="javascript:;">&#xe667;</a>
+						<nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
+							<ul class="cl">
+								<li class="current">
+									<a href="index.html" target="_blank">首页</a>
+								</li>
+								<li>
+									<a href="main/blog/blog.html" target="_blank">博客</a>
+								</li>
+								<li>
+									<a href="#src/about/" target="_blank">关于我们</a>
+								</li>
+								<li valign="left" style="float:right;">
+									<a href="main/user/login.html">登录/注册</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="navbar-userbar hidden-xs"></nav>
+					</div>
+				</div>
+			</header>
 			<div class="wap-container">
 				<div class="container ui-sortable">
 
@@ -33,7 +71,7 @@
 						<div class="panel-header1">
 							<div class="panel-body">
 								<div class="row cl">
-									<div class="formControls col-xs-8">
+									<div class="formControls col-xs-12">
 										<input type="text" class="input-text" placeholder="输入文章标题" name="username" id="username">
 									</div>
 								</div>
@@ -44,7 +82,7 @@
 
 								<div class="row cl">
 
-									<div class="formControls col-xs-8">
+									<div class="formControls col-xs-12">
 										<script id="editor" type="text/plain" style="width:100%;height:500px;"></script>
 										<!-- <textarea cols="" rows="" class="textarea" name="beizhu" id="beizhu" placeholder="说点什么...最少输入10个字符"></textarea> -->
 									</div>
@@ -52,8 +90,8 @@
 
 							</form>
 						</div>
-						<div class="panel-body ">
-							<div style="width:66.66666667%;">
+						<div class="panel-body">
+							<div style="width:100%;">
 								<div class="Huitags-wraper">
 									<div class="Huitags-editor cl" id="label1">
 										<input type="hidden" id="label" value="">
@@ -67,18 +105,19 @@
 										<div class="Huitags-has"></div>
 									</div>
 									<div class="Huitags-editor cl" id="label2">
-										<span class="Huitags-token">H-ui</span>
-										<span class="Huitags-token">辉哥</span>
 										<span class="Huitags-token">JS</span>
 										<span class="Huitags-token">CSS</span>
-										<span class="Huitags-token">Html</span>
+										<span class="Huitags-token">HTML</span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<p>
+						<hr>
+					</p>
 					<div class="row cl">
-						<div class="col-xs-8 col-xs-offset-3">
+						<div class="col-xs-8 col-xs-offset-6">
 							<input class="btn btn-primary" type="submit" value="&nbsp;&nbsp;发布&nbsp;&nbsp;">
 						</div>
 					</div>
